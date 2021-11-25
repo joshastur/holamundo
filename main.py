@@ -24,9 +24,10 @@ def dar_alta(nombre: str, telefono: str):
     f.close()
     return {"alta":"ok"}
 
-
-
-
+@app.delete("/borrar_fichero")
+def borrar():   
+    with open("demofile.txt", 'r+') as f:
+        f.truncate(0)
 
 # from typing import Optional
 # from fastapi import FastAPI
