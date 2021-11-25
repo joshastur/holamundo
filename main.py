@@ -24,6 +24,8 @@ def dar_alta(nombre: str, telefono: str):
     f.close()
     return {"alta":"ok"}
 
+# Borrar fichero
+
 @app.delete("/borrar_fichero")
 def borrar():   
     with open("demofile.txt", 'r+') as f:
