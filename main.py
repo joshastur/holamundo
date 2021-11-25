@@ -24,7 +24,7 @@ def dar_alta(nombre: str, telefono: str):
     f.close()
     return {"alta":"ok"}
 
-# Borrar fichero
+# Borrar fichero contactos
 
 @app.delete("/borrar_fichero")
 def borrar():   
