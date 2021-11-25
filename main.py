@@ -1,3 +1,6 @@
+
+# Cambios creados por Developer 2
+
 from typing import Optional
 from fastapi import FastAPI
 
